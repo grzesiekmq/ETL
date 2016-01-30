@@ -1,0 +1,7 @@
+body {background-color: orange}
+a {box-shadow: 0 9px #999}
+a:active {font-size: 24px
+	box-shadow: 0 5px #666666
+	transform: translateY(4px)}
+ul {list-style-type: none}
+div {text-align: center}

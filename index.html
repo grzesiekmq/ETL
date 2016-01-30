@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<title>ETL</title>
+	<meta name="fragment" content="!" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-resource.js"></script>
+	<script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	
+	<script type="text/javascript" src="etl.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+	
+
+	
+	
+
+</head>
+<body ng-app="myApp" ng-controller="IndexController">
+
+<br>
+<h1>
+Extract Transform Load <br>
+</h1>
+<div>
+<p><input type="text" id="url" ng-model="str"></p>
+
+
+
+	
+	<li><a><button class="ui-button ui-big ui-widget ui-state-default ui-corner-all ui-button-text-only" ng-click="etl()">ETL</button></a></li><br>
+	<ol>
+	<li><a><button id="e" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ng-click="extract()">Extract</button></a></li><br>
+	<li><a><button id="t" disabled class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ng-click="transform()">Transform</button></a></li><br>
+	<li><button id="l" disabled class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ng-click="">Load</button></li><br><br><br>
+	</ol>
+	<li><a><button class="" href="/review.php" ng-click="addReview()">Dodaj opinię</button></a></li>
+	
+	<ul>
+	<li><a><button class="c">Eksport do CSV</button></a></li>
+	<li><button ng-click="">Eksport do TXT</button></li>
+	<li><button ng-click="">Wyczyść</button></li>
+	</ul>
+
+
+	<p id="produkt"></p>
+
+
+</div>
+
+
+
+</body>
+</html>
