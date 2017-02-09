@@ -2,7 +2,7 @@ angular.module('myApp', ['ngResource'])
     .controller('IndexController', ['$scope', '$http', function($scope, $http) {
 
 
-        // ETL w postaci pierwszej zgodnie z 5 pkt. zad.
+        // ETL w postaci pierwszej zgodnie z 5 pkt. zad
         $scope.etl = function() {
 
 
